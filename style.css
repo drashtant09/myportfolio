@@ -219,7 +219,7 @@ html{
 }
 /*  mobile device */
 
-@media only screen and (max-width:850px){
+@media only screen and (max-width:925px){
     .navbar ul{
         flex-wrap: wrap;
         justify-content: center;
