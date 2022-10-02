@@ -102,7 +102,7 @@ html{
     display: flex;
 }
 #pic img{
-    width: 500px;
+    width: 575px;
     height: 400px;
 }
 #intro{
@@ -155,14 +155,14 @@ html{
     width: 350px;
     height: 450px;
     border: 1px solid black;
-    margin: 1opx;
+    margin: 10px;
     align-items: center;
     text-align: justify;
-    padding: 1opx;
+    padding: 10px;
     border-radius: 15px;
     background: linear-gradient(to top, rgb(255,45,45) 50%, white 50%);
     background-size: 100% 200%;
-    transition: all .8;
+    transition: all .8s;
 }
 .box:hover{
     background-position: left bottom;
@@ -216,5 +216,41 @@ html{
 #send:hover{
     cursor: pointer;
     box-shadow: 0 0 10px white;
+}
+/*  mobile device */
+
+@media only screen and (max-width:850px){
+    .navbar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #home{
+        height: 820px;
+    }
+    .headings{
+        font-size: 2.5rem;
+    }
+    #pic{
+        flex-direction: column;
+        align-items: center;
+    }
+    #pic img{
+        width: 27rem;
+        height: 25rem;
+    }
+    #intro h2{
+        text-align: center;
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    .input{
+        width: 60%;
+    }
+    #msg{
+        width: 55%;
+    }
+    #send{
+        width: 20%;
+    }
 }
 
