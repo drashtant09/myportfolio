@@ -68,9 +68,28 @@ html{
     top: 30%;
     right: 10%;
 }
-.headings{
+.title{
     font-family: century;
     font-size: 3rem;
+    text-align: center;
+    margin: 40px 10px;
+    /* -webkit-text-stroke: 2px #fff;   */
+    color: transparent;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+@keyframes backcolor {
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.headings{
+    font-family: century;
+    font-size: 2.5rem;
     text-align: center;
     margin: 40px 10px;
 }
@@ -122,20 +141,20 @@ html{
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
-    align-items: center;
     padding: 20px;
 }
 .gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 .gallery img{
     width: 360px;
     height: 240px;
     margin: 10px;
 }
+
 
 /* Services Section */
 #services{
